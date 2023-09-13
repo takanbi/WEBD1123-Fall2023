@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+#div1 {
+    width: 100vw;
+    height: 100vh;
+    background-color: #180E59;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    color: #EDF24B;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 4em;
+    letter-spacing: 8px;
+}
+h3 {
+    color: #F2F2F2;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+}
+button {
+    background: #F2E842;
+    font-size: 2em;
+    padding: 0.5em;
+    text-align: center;
+    display: block;
+}
+#paragraph {
+    color: white;
+}
+
+
+/* Color Theme Swatches in Hex */
+/* { color: #180E59; }
+ { color: #EDF24B; }
+ { color: #F2E852; }
+ { color: #F2F2F2; }
+ { color: #0D0D0D; } */
+
+
+
+
