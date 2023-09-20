@@ -25,7 +25,7 @@ const words1 = new Array(
 
 // console.log(Math.floor(Math.random() * 10));
 function makePhrase() {
-    let test = true;
+    // let test = true;
     let rand1 = Math.floor((Math.random() * words1.length));
     let rand2 = Math.floor((Math.random() * words2.length));
     let rand3 = Math.floor((Math.random() * words3.length));
@@ -34,14 +34,40 @@ function makePhrase() {
     paragraph.innerHTML = phrase;
     // function func() {
         
-        if (test) {
-            paragraph.style.color = "aquamarine"; 
-            test = false;
-        }
-        else {
-            test = true;
-            paragraph.style.color = "red"; 
-        }
+        // if (test) {
+        //     paragraph.style.color = "aquamarine"; 
+        //     test = false;
+        // }
+        // else {
+        //     test = true;
+        //     paragraph.style.color = "red"; 
+        // }
     //}
     // paragraph.style.color = "aquamarine";
 } 
+
+// const contactCheck = new Object();
+// contactCheck.firstname = "Tunji"
+// This is how to create a constructor
+
+const contactCheck = {
+  firstname: "Tunji",
+  lastname: "Akanbi",
+  
+}
+function getFormInput(e) {
+// function getFormInput() {
+  e.prevent.default();
+  let formContent = document.getElementById("form-content");
+
+  // let firstName = document.getElementById("firstname");
+  // formContent.textContent = firstName.value;
+  document.getElementById("form-content").style.display = "block";
+//   if (firstName.value == contactCheck.firstname) {
+// alert(" Your firstname is " + firstName.value);
+alert("Ok, it works")
+//   }
+
+}
+let button2 = document.getElementById("button2");
+button2.addEventListener("click", getFormInput, false);
