@@ -9,11 +9,12 @@ font-family: 'Anton', sans-serif;
 }
 .container {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: aquamarine;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* transform: scale(0.75); */
 }
 #container-section {
     width: 75%;
@@ -53,11 +54,13 @@ form {
     display: flex;
     flex-direction: column;
     width: 450px;
+    /* margin-top: 20em; */
+    transform: scale(0.75);
 }
 h1 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.5em;
-    margin-bottom:2em;
+    /* margin-bottom:2em; */
 }
 input {
     height: 40px;
@@ -84,11 +87,19 @@ input:focus {
     background-color: white;
 }
 
-#form-content {
+/* #form-content {
     position: absolute;
     height: 700px;
     background-color: white;
     width: 450px;
-    display: none;
-    /* visibility: hidden; */
+} */
+.show {
+    position: absolute;
+    height: 700px;
+    background-color: white;
+    width: 450px;
+    visibility: visible;
+} 
+.hidden {
+    visibility: hidden;
 }
