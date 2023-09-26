@@ -9,11 +9,11 @@ font-family: 'Anton', sans-serif;
 }
 .container {
     width: 100%;
-    /* height: 100vh; */
+    height: 100vh;
     background-color: aquamarine;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     /* transform: scale(0.75); */
 }
 #container-section {
@@ -95,7 +95,7 @@ input:focus {
 } */
 .show {
     position: absolute;
-    height: 700px;
+    height: 800px;
     background-color: white;
     width: 450px;
     visibility: visible;
