@@ -58,27 +58,31 @@ const contactCheck = {
 // const form_Content = document.getElementById("form-content");
 // form_Content.classList.add("hidden");
 let formC = document.getElementById("form-content").classList;
-
+console.log(formC);
 function getFormInput() {
-// function getFormInput(e) {
-  // let formContent = document.getElementById("form-content");
-  // e.prevent.default();
-  // let formContent = document.getElementById("form-content");
-
-  // let firstName = document.getElementById("firstname");
-  // form_Content.textContent = firstName.value;
-  // form_Content.classList.remove("hidden");
-  // form_Content.classList.add("show");
-
-  formC.remove("hidden");
   formC.add("show");
-  console.log("what the f.$%%!!!");
-  //   if (firstName.value == contactCheck.firstname) {
-  // alert(" Your firstname is " + firstName.value);
-  // alert("Ok, it works");
-  //   }
+  let firstName = document.getElementById("firstname").value;
+  let lastName = document.getElementById("lastname").value;
+  let streetAddress = document.getElementById("streetaddress").value;
+  let city = document.getElementById("city").value;
+  let state = document.getElementById("state").value;
+  let zipCode = document.getElementById("zipcode").value;
+  let email = document.getElementById("email").value;
+  let message = document.getElementById("message").value;
+  let data = new Array (firstName, lastName, streetAddress, city, state, zipCode, email, message);
+  console.log(data);
+
+  // validateForm(firstName)
+  // console.log(firstName);
+
 }
 let button2 = document.getElementById("button2");
 button2.addEventListener("click", getFormInput);
 
 });
+
+function validateForm(a) {
+  if (a === ""){
+    alert("please provide an input");
+  }
+}

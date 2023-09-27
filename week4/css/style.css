@@ -95,10 +95,12 @@ input:focus {
 } */
 .show {
     position: absolute;
+    top: 3em;
     height: 800px;
     background-color: white;
     width: 450px;
     visibility: visible;
+    border-radius: 1em;
 } 
 .hidden {
     visibility: hidden;
